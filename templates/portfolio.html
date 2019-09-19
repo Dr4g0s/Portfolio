@@ -1,0 +1,323 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}Portfolio{% endblock  %}
+
+
+{% block content %}
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Welcome To My Portfolio App!</div>
+        <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light page-section" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Portfolio</h2>
+          <h3 class="section-subheading text-muted">All projects.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/e-learning.jpeg' %}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>E-Learning</h4>
+            <p class="text-muted">E-Learning Website</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/e-commerce.png' %}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>E-Commerce</h4>
+            <p class="text-muted">E-Commerce Website</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/social.jpg' %}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Social Media</h4>
+            <p class="text-muted">Social Media Website </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/blog.webp' %}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Blog</h4>
+            <p class="text-muted">My Blog</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/crypto.jpg' %}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Crypto News</h4>
+            <p class="text-muted">Crypto Currency Latest News</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/movie.jpg' %}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Movie Trailer</h4>
+            <p class="text-muted">Movie Trailer Website</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio Modals -->
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Django E-Learning</h2>
+                <p class="item-intro text-muted">Django E-Learning Web App.</p>
+                <img class="img-fluid d-block mx-auto" src="{% static 'img/e-learning.jpeg' %}" alt="">
+                <p>e-Learning app utilizing technologies to access educational curriculum outside
+                   of a traditional classroom, it refers to courses!</p>
+                <ul class="list-inline">
+                  <li>Category: Django-Apps</li>
+                  <li>Link: <a href="#">App Link</a></li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">E-Commerce</h2>
+                <p class="item-intro text-muted">Django E-Commerce App.</p>
+                <img class="img-fluid d-block mx-auto" src="img/e-commerce.png" alt="">
+                <p>Djago eCommerce Project!</p>
+                <ul class="list-inline">
+                  <li>Category: Django-Apps</li>
+                  <li>Link: <a href="http://dr4g0s5.pythonanywhere.com">App Link</a></li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1"
+                                    role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Social Media</h2>
+                <p class="item-intro text-muted">Django Social Media App.</p>
+                <img class="img-fluid d-block mx-auto" src="img/social.jpg" alt="">
+                <p>Django social media app where you can post images, like,
+                    comment and follow</p>
+                <ul class="list-inline">
+                  <li>Category: Django-Apps</li>
+                  <li>Link: <a href="http://dr4g0s4.pythonanywhere.com">App Link</a></li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1"
+    role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Blog</h2>
+                <p class="item-intro text-muted">Django Blog.</p>
+                <img class="img-fluid d-block mx-auto" src="img/blog.webp" alt="">
+                <p>Django self blog!</p>
+                <ul class="list-inline">
+                  <li>Category: Django-Apps</li>
+                  <li>Link: <a href="http://dr4g0s1.pythonanywhere.com">App Link</a></li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1"
+    role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Crypto News</h2>
+                <p class="item-intro text-muted">Django Crypto Currency Latest News App.</p>
+                <img class="img-fluid d-block mx-auto" src="img/crypto.jpg" alt="">
+                <p>Django App get crypto currency latest news using API!</p>
+                <ul class="list-inline">
+                  <li>Category: Django-Apps</li>
+                  <li>Link: <a href="http://dr4g0s3.pythonanywhere.com/">App Link</a></li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1"
+        role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Movie Trailer</h2>
+                <p class="item-intro text-muted">Dajngo Movie Trailer App.</p>
+                <img class="img-fluid d-block mx-auto" src="img/movie.jpg" alt="">
+                <p>Django app that show movie trailers!</p>
+                <ul class="list-inline">
+                  <li>Category: Django-Apps</li>
+                  <li>Link: <a href="http://dr4g0s2.pythonanywhere.com/">App Link</a></li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock  %}
